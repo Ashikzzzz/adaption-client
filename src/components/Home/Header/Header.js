@@ -25,7 +25,7 @@ const Header = () => {
        <Link to="/login"> <li><a>LogIn</a></li></Link>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">PetConnect</a>
+    <a className="btn btn-ghost normal-case text-xl">PetMates</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
