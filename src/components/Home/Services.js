@@ -5,10 +5,10 @@ import { FaBeer, FaCat, FaHospitalAlt, FaHotel, FaRegPaperPlane, FaUnsplash } fr
 const Services = () => {
   return (
     <div >
-        <h1 className='text-5xl text-center mt-8 font-bold '>Our Services</h1>
+        <h1 className='text-5xl text-center text-cyan-900 mt-8 font-bold '>Our Services</h1>
         <div className='grid lg:grid-cols-5 grid-cols-1 mt-8 justify-center '>
             <div>
-                <FaCat className='text-4xl w-full mx-auto text-sky-600'></FaCat>
+                <FaCat className='text-4xl w-full mx-auto text-sky-600 '></FaCat>
 
                 <h3 className='font-bold  text-lg text-center '>Grooming</h3>
             </div>
