@@ -4,6 +4,10 @@ import Services from '../components/Home/Services'
 import PetGoods from '../components/Home/PetGoods'
 import Grooming from '../components/Home/Grooming'
 import PetHotel from '../components/Home/PetHotel'
+import Discount from '../components/Home/Discount'
+import VaterinaryCare from '../components/Home/VaterinaryCare'
+import News from '../components/Home/News'
+import PetPlaying from '../components/Home/PetPlaying'
 
 const Home = () => {
   return (
@@ -13,6 +17,10 @@ const Home = () => {
         <Grooming></Grooming>
         <PetGoods></PetGoods>
         <PetHotel></PetHotel>
+        <Discount></Discount>
+        <VaterinaryCare></VaterinaryCare>
+        <News></News>
+        <PetPlaying></PetPlaying>
     </div>
   )
 }
