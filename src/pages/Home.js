@@ -8,6 +8,9 @@ import Discount from '../components/Home/Discount'
 import VaterinaryCare from '../components/Home/VaterinaryCare'
 import News from '../components/Home/News'
 import PetPlaying from '../components/Home/PetPlaying'
+import Testimonial from '../components/Home/Testimonial'
+import Adaption from '../components/Home/Adaption'
+import Footer from '../Shared/Footer'
 
 const Home = () => {
   return (
@@ -21,6 +24,9 @@ const Home = () => {
         <VaterinaryCare></VaterinaryCare>
         <News></News>
         <PetPlaying></PetPlaying>
+        {/* <Testimonial></Testimonial> */}
+        <Adaption></Adaption>
+        {/* <Footer></Footer> */}
     </div>
   )
 }
