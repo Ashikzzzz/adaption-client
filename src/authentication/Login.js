@@ -4,6 +4,39 @@ import loginAnimataion from "../assets/Animation/107385-login.json"
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+
+const handleLogin=(event)=>{
+  event.preventDefault()
+  const form = event.target;
+  const email = form.email.value;
+  const password = form.password.value 
+  const loginData ={
+    userEmail : email,
+    password
+  }
+
+  console.log(loginData)
+
+  fetch("http://localhost:5000/api/v1/user/login",{
+    method: "POST",
+    headers: {
+      "Content-type" : "application/json"
+    },
+    body:JSON.stringify(loginData) 
+  })
+  .then(res => res.json())
+  .then(data =>{
+   if(data?.status === "success"){
+    alert("Login Successful")
+    const token = data ?. data?. token
+    localStorage.setItem("token",token)
+   }
+   else{
+    alert("Login is not successful")
+   }
+  })
+}
+
   return (
     <div>
         <h1 className='text-5xl font-bold mt-16 text-center text-cyan-900 '>Log In Here</h1>
@@ -13,7 +46,7 @@ const Login = () => {
                     <Lottie className='w-96 ml-28' animationData={loginAnimataion} loop={true} />
                 </div>
 
-             <form>
+             <form onSubmit={handleLogin}>
              <div className='grid grid-cols-1'>
               
                 <div className='mt-8'>

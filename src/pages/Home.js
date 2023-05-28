@@ -10,7 +10,7 @@ import News from '../components/Home/News'
 import PetPlaying from '../components/Home/PetPlaying'
 import Testimonial from '../components/Home/Testimonial'
 import Adaption from '../components/Home/Adaption'
-import Footer from '../Shared/Footer'
+
 
 const Home = () => {
   return (

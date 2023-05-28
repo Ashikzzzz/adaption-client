@@ -8,7 +8,7 @@ const PetHotel = () => {
     <div className='mx-28 mt-20 bg-sky-50 rounded-lg '>
        <div className='flex items-center justify-center'>
         <FaCat  className='text-5xl gap-4 text-sky-600 '></FaCat>
-         <h1 className='text-5xl text-cyan-900 font-bold my-16 text-center'>Grooming Salon</h1>
+         <h1 className='text-5xl text-cyan-900 font-bold my-16 text-center'>Pet Hotel</h1>
        </div>
        <div className='grid lg:grid-cols-2 gap-10 grid-cols-1 '>
         {/* lottie  */}
